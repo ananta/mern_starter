@@ -1,0 +1,16 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "A containerized fullstack application",
+  "main": "index.js",
+  "author": "ananta bastola",
+  "license": "MIT",
+  "scripts": {
+    "frontend": "cd frontend && yarn start",
+    "backend": "cd backend && yarn start",
+    "dev": "concurrently \"yarn run backend\" \"yarn run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
